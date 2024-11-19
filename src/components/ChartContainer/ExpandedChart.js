@@ -7,7 +7,7 @@ const ExpandedChart = ({ data }) => (
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="date" tickFormatter={(date) => new Date(date).toLocaleDateString()} />
       <YAxis />
-      <Tooltip formatter={(value) => [`${value}`, `Traffic Volume:`]} />
+      <Tooltip formatter={(value) => [`${value}`, `Traffic Volume`]} />
       <Legend />
       <Area type="monotone" dataKey="trafficVolume" stroke="#8884d8" fill="#8884d8" />
     </AreaChart>
