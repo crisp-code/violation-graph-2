@@ -1,20 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from 'react-bootstrap';
 import CompactChart from './CompactChart';
 import ExpandedChart from './ExpandedChart';
 
-const ViolationItem = ({ title, data }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleChart = () => {
-    setIsExpanded(!isExpanded);
-  };
-
+const ViolationItem = ({ title, data, isExpanded, onToggle }) => {
   return (
     <li style={{ marginTop: '20px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span>{title}</span>
-        <Button variant="outline-primary" size="sm" onClick={toggleChart}>
+        <Button variant="outline-primary" size="sm" onClick={onToggle}>
           {isExpanded ? '-' : '+'}
         </Button>
       </div>
