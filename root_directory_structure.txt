@@ -1,0 +1,49 @@
+violation-graph-2/
+│
+├── .gitignore                # Git 무시 파일
+├── README.md                 # 프로젝트 설명 파일
+├── package.json              # 프로젝트 의존성, 스크립트, 메타 정보
+├── package-lock.json         # 의존성 버전 고정 파일
+│
+├── public/                   # 배포용 파일들 (정적 파일들)
+│   ├── data/                 # 데이터 파일들 (CSV 등)
+│   │   ├── cctv_violation_data_20231115_to_20251115_dataset_1.csv
+│   ├── favicon.ico           # 웹사이트 아이콘
+│   ├── index.html            # 기본 HTML 파일
+│   ├── logo192.png           # 작은 로고 이미지
+│   ├── logo512.png           # 큰 로고 이미지
+│   ├── manifest.json         # PWA 관련 메타데이터
+│   └── robots.txt            # 로봇 제외 설정
+│
+├── src/                      # 소스 코드 파일들
+│   ├── components/           # React 컴포넌트들
+│   │   └── ChartContainer/   # 차트 관련 컴포넌트들
+│   │       ├── ButtonGroup.css
+│   │       ├── ButtonGroup.js
+│   │       ├── ButtonItem.js
+│   │       ├── CenterLineViolationChart.js
+│   │       ├── ChartContainer.css
+│   │       ├── ChartContainer.js
+│   │       ├── CompactChart.js
+│   │       ├── ExpandedChart.js
+│   │       ├── GenericChart.js
+│   │       ├── HelmetViolationChart.js
+│   │       ├── LaneViolationChart.js
+│   │       ├── parseCSV.js
+│   │       ├── ReverseDrivingChart.js
+│   │       ├── ViolationChart.js
+│   │       ├── ViolationItem.js
+│   │       ├── ViolationList.css
+│   │       ├── ViolationList.js
+│   │       └── Common.css
+│   ├── App.css               # App 컴포넌트 스타일
+│   ├── App.js                # App 컴포넌트
+│   ├── App.test.js           # App 컴포넌트 테스트
+│   ├── index.css             # 기본 스타일
+│   ├── index.js              # React 진입점
+│   ├── logo.svg              # 로고 SVG 파일
+│   ├── reportWebVitals.js    # 웹 성능 측정
+│   ├── setupTests.js         # 테스트 셋업
+│   └── utils.js              # 유틸리티 함수
+│
+└── node_modules/             # 프로젝트 의존성 파일들
